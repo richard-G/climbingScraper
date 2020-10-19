@@ -4,13 +4,15 @@ import os
 # twilio config
 account_sid = os.environ['twilio-sid']
 auth_token = os.environ['twilio-token']
+from_number = os.environ['from_number']
+to_number = os.environ['to_number']
 client = Client(account_sid, auth_token)
 
 
 def send_text(body):
     message = client.messages.create(
-        to="+447411411435",
-        from_="+14048009173",
+        to=from_number,
+        from_=to_number,
         body=body)
 
 
