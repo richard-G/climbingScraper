@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from send_sms import send_text
 
 
-def send_notification():
+def send_notification(availabilities):
     body = 'update: \n'
     # construct message body
     for day, value in availabilities.items():
@@ -58,5 +58,5 @@ for i, value in enumerate(availabilities.values()):
     # if i == 0:
     #     continue
     if value != 'AvailabilityFull.':
-        send_notification()
+        send_notification(availabilities)
         break
