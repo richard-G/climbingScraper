@@ -10,7 +10,7 @@ client = Client(account_sid, auth_token)
 
 
 def send_text(body):
-    message = client.messages.create(
+    client.messages.create(
         to=from_number,
         from_=to_number,
         body=body)
