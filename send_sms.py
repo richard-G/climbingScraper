@@ -11,8 +11,8 @@ client = Client(account_sid, auth_token)
 
 def send_text(body):
     client.messages.create(
-        to=from_number,
-        from_=to_number,
+        to=to_number,
+        from_=from_number,
         body=body)
 
 

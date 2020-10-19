@@ -1,5 +1,4 @@
 {
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "python.pythonPath": "C:\\Users\\Richard\\anaconda3\\python.exe"
+    "python.pythonPath": "C:\\Users\\Richard\\anaconda3\\python.exe",
+    "terminal.integrated.shellArgs.windows": []
 }
