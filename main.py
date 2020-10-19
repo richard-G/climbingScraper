@@ -18,7 +18,11 @@ def send_notification():
 
 
 href = "https://app.rockgympro.com/b/widget/?a=offering&offering_guid=5e6292b94ab14ce892b4faedc708faa5&widget_guid=e3778ccd21d04e568279fcd4b06112ec&random=5f8d7a55505df&iframeid=rgpiframe5f8d7a54f0388&mode=e#"
-DRIVER_PATH = "C:/Users/Richard/Documents/coding/chromedriver/chromedriver.exe"
+# DRIVER_PATH = "C:/Users/Richard/Documents/coding/chromedriver/chromedriver.exe"
+
+# paths for heroku
+CHROME_PATH = '/app/.apt/usr/bin/google_chrome'
+DRIVER_PATH = '/app/.chromedriver/bin/chromedriver'
 
 options = Options()
 options.headless = True
