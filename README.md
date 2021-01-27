@@ -1,3 +1,3 @@
-# climbing scraper
+# Climbing Scraper
 
-**script that checks for available climbing slots and sends a text if any open up**
+A program that periodically checks for available slots at a climbing center using a web scraper. If available slots are found, a text message of their details is sent to the user.
